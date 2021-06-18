@@ -1,0 +1,147 @@
+/* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Nova+Flat&display=swap');
+@font-face{
+    font-family: Assassins;
+    src: url("../fonts/Assassin.ttf");
+}
+
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    background-image: none;
+}
+
+.cabecalho {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#paginaInicial {
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 0px 7px black;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+
+#gridImagens {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    place-items: center;
+}
+
+.imagemContainer {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    margin: 15px;
+    transition: transform .2s;
+    cursor: pointer;
+}
+
+.imagensGaleria {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    box-sizing: border-box;
+    resize: both;
+}
+
+.imagemContainer:hover {
+    transform: scale(1.1);
+}
+
+.searchIconCont {
+    width: 100%;
+    visibility: hidden;
+    background-color: #00000096;
+    height: 100%;
+    border: 0;
+    float: left;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.searchIcon {
+    width: 70px;
+}
+
+#modalImagens {
+    background-color: #00000083;
+    position: fixed;
+    height: 100%;
+    visibility: hidden;
+    width: 100%;
+    overflow: auto;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#modalImagens img {
+    max-height: 75%;
+    max-width: 75%;
+}
+
+.downloadButton {
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    width: 150px;
+    height: 40px;
+    border-radius: 0px 0px 10px 10px;
+    border: 0;
+    text-align: center;
+    line-height: initial;
+    cursor: pointer;
+    transition: all 100ms linear;
+}
+
+.downloadButton:hover {
+    background-color: #bbffb5;
+}
+
+.downloadButton img {
+    filter: invert(100%);
+    width: 15%;
+}
+
+.fecharModal {
+    color: #ffffff;
+    font-size: 28px;
+    position: absolute;
+    font-weight: bold;
+    user-select: none;
+    cursor: pointer;
+    right: 20px;
+    top: 20px;
+}
+
+.fecharModal:hover,
+.fecharModal:focus {
+  color: rgb(214, 214, 214);
+  text-decoration: none;
+  cursor: pointer;
+}

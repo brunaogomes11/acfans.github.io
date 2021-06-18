@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livros - Assassin's Creed</title>
+    <link rel="stylesheet" href="../../../css/index.css">
+    <link rel="stylesheet" href="../../../css/livros.css">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <section>
+        <div class="cabecalho">
+            <img src="../../../images/logo.png" alt="Logo Assassins Creed" id="logo">
+            <div class="menu">
+                <a href="../../index.html" class="menuBotoes" id="menuInicial">Página Inicial</a>
+                <a href="./jogos.html"class="menuBotoes" id="menuJogos">Jogos</a>
+                <a class="menuBotoes active" id="menuLivros">Livros</a>
+                <a href="./imagens.html" class="menuBotoes" id="menuImagens">Imagens</a>
+                <a href="./personagens.html" class="menuBotoes" id="menuPersonagens">Personagens</a>
+                <a href="./contato.html" class="menuBotoes" id="menuContato">Contato</a>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div id="paginaInicial">
+            <div id="containerLivros"></div>
+            <div id="containerModal"></div>
+        </div>
+    </section>
+    <section>
+        <div class="rodape">
+            <div class="redesSociais">
+                <a href="https://www.ubisoft.com/pt-br/game/assassins-creed" target="_blank" id="ubisoft">Ubisoft</a>
+                <a href="https://www.epicgames.com/store/pt-BR/" target="_blank" id="epicgames">Epic Games</a>
+                <a href="https://store.steampowered.com/about/" target="_blank" id="steam">Steam</a>
+            </div>
+            <div class="promocoes">
+                <h3>Quer receber promoções da franquia Assassin's Creed?</h3>
+                <form class="promoForm">
+                    <label for="name" class="labelForm">Nome</label>
+                    <input type="text" name="name" id="name" class="promoInput" placeholder="Digite aqui">
+                    <label for="email" class="labelForm">Email</label>
+                    <input type="email" name="email" id="email" class="promoInput" placeholder="Digite aqui">
+                    <div class="confirmarContainer">
+                        <input type="checkbox" name="confirm" id="confirmRatio">
+                        <label for="confirm">Confirmo querer receber atualizações sobre promoções da franquia Assassin's
+                            Creed por email</label>
+                    </div>
+                    <input type="submit" value="Enviar" class="buttonSubmit">
+                </form>
+            </div>
+        </div>
+        <div class="direitosAutorais">Direitos Autorais para Bruno Gomes Pereira</div>
+    </section>
+    <script src="./livros/livros.js"></script>
+</body>
+</html>

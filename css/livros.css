@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Flat&display=swap');
+@font-face{
+    font-family: Assassins;
+    src: url("../fonts/Assassin.ttf");
+}
+
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../images/backgroundParallax2.jpg");
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cabecalho {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #f0f0f0;
+    align-items: center;
+    box-shadow: 0px 0px 7px black;
+}
+
+#paginaInicial {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+#filtroLivros {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    border-right: 1px solid black;
+    height: 80vh;
+}
+
+.inputsFiltro {
+    display: flex;
+    flex-direction: row;
+}
+
+#containerLivros {
+    width: calc(100% - 200px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.livroCard {
+    margin: 15px;
+    width: 20%;
+    border: 1px solid #474747;
+    border-radius: 15px 0px;
+    background-color: #f5f5f5;
+}
+
+.descLivro {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.imagemLivro {
+    width: 100%;
+    height: 300px;
+    border-radius: 15px 0px;
+}
+
+.botaoDetalhes {
+    border: 1px solid black;
+    background-color: #E53A42;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px 0px;
+    cursor: pointer;
+}
+
+.modalCard {
+    background-color: #00000083;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagemLivroModal {
+    width: 30%;
+    height: 65%;
+}
+
+.descLivroModal {
+    padding: 15px;
+    background-color: #e7e7e7;
+    width: 55%;
+    height: 60%;
+    box-shadow: 0 0 10px rgb(49, 49, 49);
+    overflow-y: auto;
+}
+
+.fecharModal {
+    float: right;
+    color: #292929;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.fecharModal:hover,
+.fecharModal:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nomeLivroModal {
+    font-family: Assassins;
+}
+
+.precoAproximadoModal {
+    margin-top: 5px;
+    color: #009100
+}
+
+.nomeAutorModal {
+    margin-top: 5px;
+    font-style: italic;
+}
+
+.sinopse {
+    margin-top: 5px;
+}
+
+.sinopse p {
+    text-indent: 1.5em;
+}
